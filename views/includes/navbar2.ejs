@@ -1,0 +1,122 @@
+<style>
+    #filters{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-left: 50px;
+      position: fixed;
+      top: 0;
+      padding-top: 70px;
+    z-index: 1000;
+    background-color: #fff
+      
+
+    }
+    .filters{
+
+      text-align: center;
+      margin-right: 2rem;
+      margin-top: 2rem;
+      opacity: 0.7;
+    }
+    .filters:hover{
+      opacity: 1;
+      cursor: pointer;
+    }
+    .filters p{
+       font-size: 0.8rem;
+    }
+    .tax-info{
+      display: none;
+    }
+     .tax-toggle{
+      border: 1px solid black;
+      border-radius: 1rem;
+      height: 3.25rem;
+      padding: 1rem;
+      margin-left: 2rem;
+      display: flex;
+      align-items: center;
+    } 
+   </style>
+
+
+
+
+<div id="filters">
+    <div class="filters">
+      <div><i class="fa-solid fa-fire"></i></div>
+     <p> Trending</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-solid fa-bed"></i></div>
+     <p>Room</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-solid fa-mountain-city"></i></div>
+     <p>Iconic Cities</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-solid fa-mountain-sun"></i></div>
+     <p>Mountains</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-brands fa-fort-awesome"></i></div>
+     <p>Castles</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-solid fa-person-swimming"></i></div>
+     <p>Amazing Pools</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-solid fa-campground"></i></div>
+     <p>Camping</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-solid fa-tractor"></i></div>
+     <p>Farms</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-solid fa-snowflake"></i></div>
+     <p>Arctic</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-solid fa-igloo"></i></div>
+     <p>Domes</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-solid fa-ship"></i></div>
+     <p>Boats</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-solid fa-tree"></i></div>
+     <p>Tropicals</p>
+    </div>
+    <div class="filters">
+      <div><i class="fa-solid fa-tents"></i></div>
+     <p>Tents</p>
+    </div>
+    <div class="tax-toggle">
+        <div class="form-check-reverse form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchfCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Display total after taxes</label>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <script>
+      let taxSwitch = document.getElementById("flexSwitchfCheckDefault");
+      taxSwitch.addEventListener("click", () =>{
+        let taxInfo = document.getElementsByClassName("tax-info");
+        for (info of taxInfo){
+       if(info.style.display != "inline"){
+        info.style.display = "inline";
+       }
+       else {
+        info.style.display = "none";
+       }
+      }
+      });
+    </script>
