@@ -1,4 +1,4 @@
-# 🏡 StayNest - Airbnb Clone
+# 🏡 WanderLust - Airbnb Clone
 
 StayNest is a fullstack Airbnb-style application built with the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to list, search, and book vacation homes around the world with an intuitive user interface and secure authentication.
 
